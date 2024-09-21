@@ -8,6 +8,7 @@ import { deleteTask } from '@/app/task';
 interface TaskDeleteProps {
   taskId: string;
 }
+
 const TaskDelete: React.FC<TaskDeleteProps> = ({ taskId }) => {
   const handleDeleteTask = async () => {
     deleteTask(taskId)
