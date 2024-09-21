@@ -9,10 +9,11 @@ interface TaskDeleteProps {
   taskId: string;
 }
 
-const TaskDelete: React.FC<TaskDeleteProps> = ({ taskId }) => {
-  const handleDeleteTask = async () => {
+const TaskDelete = ({ taskId }: TaskDeleteProps) => {
+  
+  const handleDeleteTask = () => {
     deleteTask(taskId)
-  }
+  };
     return (
         <>
            <Container maxWidth="lg">
