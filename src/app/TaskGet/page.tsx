@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import { Container, Typography } from "@mui/material";
 import "@/assets/styles/TaskGet.scss";
 import "@/assets/styles/styles.scss";
-import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
+import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react';
 import { getTasks } from '@/app/task';
