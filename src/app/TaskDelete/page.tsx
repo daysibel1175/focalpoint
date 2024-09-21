@@ -5,14 +5,10 @@ import "@/assets/styles/TaskDelete.scss";
 import Link from "next/link";
 import { deleteTask } from '@/app/task';
 
-interface TaskDeleteProps {
-  taskId: string;
-}
-
-const TaskDelete = ({ taskId }: TaskDeleteProps) => {
+const TaskDelete = () => {
   
   const handleDeleteTask = () => {
-    deleteTask(taskId)
+    deleteTask()
   };
     return (
         <>
