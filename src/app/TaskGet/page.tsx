@@ -7,6 +7,7 @@ import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react';
 import { getTasks } from '@/app/task';
+import icone from "@/assets/images/trash.png"
 
 const TaskGet = () => {
   const [tasks, setTasks] = useState([
@@ -33,7 +34,7 @@ const TaskGet = () => {
                 <span className="titulo">{task.title}</span>
               </div>
               <button>
-              <Link href='/TaskDelete'><DeleteOutlinedIcon className="icon" /></Link>
+              <Link href='/TaskDelete'><img src={icone.src} className="icon" /></Link>
               </button>
             </div>
         
@@ -48,7 +49,7 @@ const TaskGet = () => {
               <span className="complet titulo">Lavar as mãos</span>
             </div>
             <button>
-              <Link href='/TaskDelete'><DeleteOutlinedIcon className="icon" /></Link>
+              <Link href='/TaskDelete'><img src={icone.src} className="icon" /></Link>
             </button>
           </div>
         </div>
