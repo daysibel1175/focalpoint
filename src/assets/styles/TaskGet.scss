@@ -1,0 +1,141 @@
+// TaskGet.scss
+
+.list {
+  width: 50%;
+  margin: 0 auto; /* Centra el contenedor */
+  display: flex;
+  flex-direction: column; /* Organiza las listas verticalmente */
+  gap: 24px; /* Espacio entre las listas */
+  padding: 32px;
+  width:40%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(234, 236, 240, 1);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+align-items: center;
+.text{
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.listTask ,
+.EndedTask  {
+  font-weight: 400;
+  font-size: 16px;
+  gap: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .taskItem {
+    display: flex;
+    align-items: center;
+   flex-direction:row;
+    padding: 16px;
+    justify-content: space-between;
+    
+.task{
+  display: inline-flex;
+gap: 1rem;
+align-items: center;
+.titulo{
+  max-width: 150px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.checkbox{
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  cursor: pointer;
+border: 1px solid rgba(176, 187, 209, 1);
+background-color: #FFFFFF;
+border-radius: 4px; 
+
+}
+input[type="checkbox"]:checked {
+  background-color:  rgba(7, 150, 211, 1)
+}
+input[type="checkbox"]:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c";
+font-size: larger;
+font-size: 22px;
+background: #A0DCF6;
+color: #0796D3;
+border: 1.5px solid #0796D3;
+display: none;
+
+}
+input[type="checkbox"]:checked:after {
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+.complet{
+text-decoration:line-through;
+}
+}
+    button{
+      background-color: #fff;
+      width: 26px;
+      height: 26px;
+      color: rgba(176, 187, 209, 1);
+      padding: 0;
+      border: 0;
+      .icon{
+          width: 24px;
+          height: 24px;
+      }
+    }
+  }
+}
+}
+.addTask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+.buttonAdd{
+    background: linear-gradient(90deg, #0796D3 0%, #53C0F0 68.65%);
+padding: 16px 24px;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 500;
+width: 450px;
+height: 51px;
+}
+}
+@media screen and (max-width: 768px) {
+  .list {
+    margin: 0; /* Centra el contenedor */
+    display: flex;
+    flex-direction: column; /* Organiza las listas verticalmente */
+    gap: 24px; /* Espacio entre las listas */
+    padding: 32px;
+    width: 100%;
+   max-width: 90vw;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid rgba(234, 236, 240, 1);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  align-items: center;
+  .listTask ,
+.EndedTask  {
+  font-weight: 400;
+  font-size: 16px;
+  gap: 24px;
+  width: 100%;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #EAECF0
+}
+  }
+
+}
