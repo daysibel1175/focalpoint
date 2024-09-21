@@ -2,7 +2,7 @@
 
 import { Container, Typography } from "@mui/material";
 import "@/assets/styles/TaskCreate.scss";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { createTask} from '@/app/task';
 import Link from "next/link";
 const TaskCreate = () => {

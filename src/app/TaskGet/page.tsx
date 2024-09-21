@@ -3,7 +3,6 @@ import Navbar from '@/components/Navbar'
 import { Container, Typography } from "@mui/material";
 import "@/assets/styles/TaskGet.scss";
 import "@/assets/styles/styles.scss";
-import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react';
 import { getTasks } from '@/app/task';
@@ -49,7 +48,7 @@ const TaskGet = () => {
               <span className="complet titulo">Lavar as mãos</span>
             </div>
             <button>
-              <Link href='/TaskDelete'><img src={icone.src} className="icon" /></Link>
+              <Link href='/TaskDelete'><img src={icone.src} alt='img' className="icon" /></Link>
             </button>
           </div>
         </div>

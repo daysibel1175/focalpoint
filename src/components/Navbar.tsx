@@ -10,8 +10,8 @@ const NavBar = () => {
       <nav className="nav-bar">
         <ul>
           <li className="logos">
-            <img src={logomark.src} alt="" />
-            <img src={logotype.src} alt="" />
+            <img src={logomark.src} alt="logo" />
+            <img src={logotype.src} alt="logotype" />
           </li>
           <li className="title">Bem-vido de volta, {user}</li>
           <li className="data">{data}</li>
